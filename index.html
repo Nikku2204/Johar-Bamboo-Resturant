@@ -718,22 +718,20 @@
             }
         }
 
-        @media (max-width: 480px) {
-            .nav-container {
-                padding: 0 1rem;
-            }
-
-            .hero-content {
-                padding: 0 1rem;
-            }
-
-            .trust-section,
-            .audience-section,
-            .menu-preview,
-            .birthday-section,
-            .contact-section {
-                padding: 3rem 1rem;
-            }
+        @media (max-width: 768px) {
+          .nav-links.active {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            background: rgba(250, 247, 240, 0.98);
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 100%;
+            padding: 1.5rem;
+            box-shadow: var(--shadow-soft);
+            z-index: 999;
+          }
         }
     </style>
 </head>
